@@ -14,3 +14,17 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery.min
+//= require owl.carousel.min.js
+//= require revolution/jquery.themepunch.tools.min
+//= require revolution/jquery.themepunch.revolution.min
+//= bootstrap.min
+//= jquery.poptrox.min
+//= enscroll-0.5.2.min
+//= jquery.scrolly
+//= jquery.isotope.min
+//= isotope-initialize
+//= bootstrap-datepicker.min
+//= userincr
+//= script
+//= jquery.simpleWeather.min
