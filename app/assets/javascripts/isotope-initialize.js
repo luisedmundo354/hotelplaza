@@ -1,4 +1,5 @@
-$(window).load(function(){
+
+
     $(function(){
         var $portfolio = $('.masonary');
         $portfolio.isotope({
@@ -36,7 +37,3 @@ $(window).load(function(){
       });
         
     });
-});
-
-
-

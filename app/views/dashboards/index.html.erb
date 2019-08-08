@@ -1,0 +1,459 @@
+
+		<section>
+			<div class="block no-padding">
+				<div class="row">
+					<div class="col-md-12 column">
+						<div class="slider-search-form">
+							<div class="tp-banner-container">
+								<div class="tp-banner" >
+									<ul>
+										<% @jumbotrons.each do |jumbotron|%>
+										<li data-transition="slidedown"  data-masterspeed="500">
+											<%= image_tag jumbotron.image,style:"width: 1600px;height:650px" ,alt:"" ,data:{kenburns:"on"}, data:{duration:"12000"}, data:{ease:"Power0.easeInOut"}, data:{bgfit:"115"}, data:{bgfitend:"100"} %>
+										</li><!-- SLIDE  -->
+										<%end%>
+									</ul>
+								</div>
+							</div>
+							<div class="find-hotels-form">
+								<div class="container">
+									<!-- <div class="hotels-form-title"><i class="fa fa-building"></i>Find Hotels</div> -->
+									<div class="hotel-form-wrapper">
+										<form action="https://sky-sa1.clock-software.com/64789/10598/wbe/products/new?wbe_product[arrival]&wbe_product[nights]&wbe_product[adult_count]&wbe_product[children_count]" target="_blank">
+											<div class="row" >
+												<div class="grid1">
+													<label>Arrival</label>
+													<div class="field">
+														
+														<input  placeholder="Select Date" name="wbe_product[arrival]" class="popupDatepicker" autocomplete="off"  >
+														<%= image_tag "https://hotelplaza.s3.us-east-2.amazonaws.com/calendar.png", class: "field-icon" %>
+													</div>
+												</div>
+												<div class="grid2">
+													<label>Nights</label>
+													<div class="field"><input class="inc-dec" value="00" type="text" name="wbe_product[nights]" placeholder=""></div>
+												</div>
+												<div class="grid2">
+													<label>Adults</label>
+													<div class="field"><input class="inc-dec" name="wbe_product[adult_count]" value="00" type="text" placeholder=""></div>
+												</div>
+												<div class="grid2">
+													<label>Kids</label>
+													<div class="field"><input class="inc-dec" name="wbe_product[children_count]" value="00" type="text" placeholder=""></div>
+												</div>
+												
+												<div class="grid3">
+													<button type="submit" class="book-now">Search Now</button>
+												</div>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div><!-- FIND HOTELS FORM -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="block gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="adds-images">
+								<div class="row">
+									<% @jbottoums.each do |bjumbo|%>
+									<div class="col-md-4"  >
+										<div class="add">
+										<a href="" ><%= image_tag bjumbo.image, style:"width:370px;height:206px" %></a>
+										</div><!-- Add -->
+									</div>
+									<%end%>
+									
+								</div>
+							</div><!-- Adds Images -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="block remove-gap gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="special-deal">
+								<div class="row">
+									<div class="col-md-6 column">
+										<div class="deal-details">
+											<span>Complimentry Services & Amenities</span>
+											<h4><a title="" href="packages-detail.html">Super Star Luxury Hotle</a></h4>
+											<p>Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus nibh.</p>
+											<div class="features-price">
+												<div class="row">
+													<div class="col-md-8 column">
+														<ul>
+															<li>Accommodation in an Overwater Villa in Star</li>
+															<li>Full Breakfast daily in Star</li>
+															<li>Return transfers troughout</li>
+														</ul>
+													</div>
+													<div class="col-md-4 column">
+														<div class="start-from">
+															<span>Start Form</span>
+															<strong>$559</strong>
+															<i>Per Person</i>
+															<a class="book-now" href="https://sky-sa1.clock-software.com/64789/10598/wbe/products/new" title="" style="text-decoration: none">Book Now</a>
+														</div>
+													</div>
+												</div>
+											</div><!-- Features & Price -->
+										</div><!-- Deal Details -->
+									</div>
+									<div class="col-md-6 column">
+										<div class="deal-gallery">
+											<ul class="nav nav-tabs">
+												<li class="active">
+													<a title="" href="#deal1" data-toggle="tab" >
+														<%= image_tag Jumbotron.first.image ,style:"width:100px;height:100px" %>
+													</a>
+												</li>
+												<li>
+													<a title="" href="#deal2" data-toggle="tab">
+														<%= image_tag Footer.first.image ,style:"width:100px;height:100px" %>
+													</a>
+												</li>
+												<li>
+													<a title="" href="#deal3" data-toggle="tab">
+																<%= image_tag Bfooter.first.image ,style:"width:100px;height:100px" %>
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="deal1">
+													<%= image_tag Footer.first.image  ,style:"width:570px;height:409px" %>
+													
+												</div>
+												<div class="tab-pane fade" id="deal2">
+												<%= image_tag Jumbotron.first.image ,style:"width:570px;height:409px" %>
+												</div>
+												<div class="tab-pane fade" id="deal3">
+														<%= image_tag Bfooter.first.image ,style:"width:570px;height:409px" %>
+												</div>
+											</div>
+										</div><!-- rooms-tabs -->
+									</div>
+								</div>
+							</div><!-- Special Deals -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- <section>
+			<div class="block remove-gap gray blackish half-parallax half-bottom">
+				<div class="parallax still" data-velocity="-.4" style="background:rgba(0, 0, 0, 0) url(http://placehold.it/1366x768) no-repeat 0 0 ;"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 column">
+							<div class="services-carousel">
+								<div class="service-slide">
+									<div class="service-img"><img src="http://placehold.it/962x459" alt="" /></div>
+									<div class="service-inner">
+										<div class="service-heading">
+											<%= image_tag "service1.png" %>
+											<span>Our Services</span>
+											<h4>Multi Cuisine Restaurant</h4>
+										</div>
+										<ul>
+											<li>200 Rooms</li>
+											<li>4 Restuarants</li>
+											<li>2 Revolving Cocktail bar</li>
+											<li>Swimming pool</li>
+											<li>24h Parking & Security</li>
+											<li>Free airport pick up service</li>
+											<li>24 hour front desk staff</li>
+										</ul>
+									</div>
+								</div>
+								<div class="service-slide">
+									<div class="service-img"><img src="http://placehold.it/962x459" alt="" /></div>
+									<div class="service-inner">
+										<div class="service-heading">
+											<%= image_tag "service2.png" %>
+											<span>Our Services</span>
+											<h4>Swimming Pool</h4>
+										</div>
+										<ul>
+											<li>Free airport pick up service</li>
+											<li>24 hour front desk staff</li>
+											<li>2 Revolving Cocktail bar</li>
+											<li>Swimming pool</li>
+											<li>4 Restuarants</li>
+											<li>200 Rooms</li>
+											<li>24h Parking & Security</li>
+										</ul>
+									</div>
+								</div>
+								<div class="service-slide">
+									<div class="service-img"><img src="http://placehold.it/962x459" alt="" /></div>
+									<div class="service-inner">
+										<div class="service-heading">
+											<%= image_tag "service1.png" %>
+											<span>Our Services</span>
+											<h4>Wireless Internet</h4>
+										</div>
+										<ul>
+											<li>200 Rooms</li>
+											<li>4 Restuarants</li>
+											<li>2 Revolving Cocktail bar</li>
+											<li>Swimming pool</li>
+											<li>24h Parking & Security</li>
+											<li>Free airport pick up service</li>
+											<li>24 hour front desk staff</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+
+		<section>
+			<div class="block gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="title">
+								<span>Resort World Best Places</span>
+								<h4>ROOMS PACKAGES</h4>
+							</div><!-- Title -->
+							<div class="rooms-packages">
+								<div class="row">
+									<%@pakages.each do |pakage|%>
+									<div class="col-md-4">
+										<div class="room-package">
+											<div class="room-image">
+												<%= image_tag pakage.image,style:"width:370px;height:260px",alt:"" %>
+												<a class="book-now" href="https://sky-sa1.clock-software.com/64789/10598/wbe/products/new" title="" style="text-decoration: none" >Book Now</a>
+											</div>
+											<div class="about-room">
+												<div class="room-title">
+													<span><%= pakage.room_type%></span>
+													<h4><a title="" href="packages-detail.html"><%=pakage.description%></a></h4>
+												</div>
+												<div class="room-bottom">
+													<span><strong>$<%=pakage.price%></strong> / Night</span>
+													<ul>
+														<li><i class="fa fa-wifi"></i></li>
+														<li><i class="fa fa-clock-o"></i></li>
+														<li><i class="fa fa-laptop"></i></li>
+														<li><i class="fa fa-umbrella"></i></li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- Room Package -->
+									</div>
+									<%end%>
+								</div>
+							</div><!-- Rooms Packages -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="block less-spacing">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 column">
+							<div class="clients-carousel">
+								<%@bfooters.each do |bfooter|%>
+								<div class="client">
+									<%= image_tag bfooter.image,style:"width:146px;height:82px"%>
+								</div><!-- Client -->
+								<%end%>
+							</div><!-- Clients Carousel -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<div class="booking-popup">
+			<div class="popup-container">
+				<div class="popup-inner">
+					<span class="close-btn"><%= image_tag "cross.png" %></span>
+					<div class="popup-title">
+						<span>Any Time Worldwide</span>
+						<h4>Book Your Room</h4>
+						<span>Not valid for bookings less than 3 days </span>
+					</div><!-- Popup Title -->
+					<div class="popup-details">
+						<div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>Any Time</span>
+										<h4>Choose Your Date</h4>
+									</div>
+								</div>
+								<div class="col-md-7 column">
+									<form action="https://sky-sa1.clock-software.com/64789/10598/wbe/products/new?wbe_product[arrival]=arrival&wbe_product[nights]&wbe_product[adult_count]&wbe_product[children_count]" >
+										<div class="row" > 
+											<div class="col-md-6">
+												<label>Check In</label>
+												<div class="field">
+													<input class="popupDatepicker" placeholder="Select Date" name="wbe_product[arrival]"  autocomplete="off" >
+													<%= image_tag "https://hotelplaza.s3.us-east-2.amazonaws.com/calendar.png", class: "field-icon" %>
+												</div>
+											</div>
+											
+											<div class="col-md-4">
+												<label>Nights</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[nights]">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label>Adults</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[adult_count]">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label>Kids</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[children_count]" >
+												</div>
+											</div>
+											
+											<div class="col-md-12">
+												<button class="book-now" type="submit" style="text-decoration: none" >BOOK NOW </button>
+											</div>
+										</div>
+									</form><!-- Tab Form -->
+								</div>
+							</div>
+						</div><!-- up Block -->
+						<!-- <div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>Awesome Rooms</span>
+										<h4>Your Room Summary</h4>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="popup-rooms">
+										<div class="popup-room">
+											<div class="popup-room-img">
+												<img src="images/resource/popup-room.jpg" alt="" />
+											</div>
+											<div class="popup-room-detail">
+												<i>Awesome Features Room</i>
+												<h5>Super Star Luxury Hotle</h5>
+												<div class="room-price-from">
+													<strong>Start From </strong>
+													<span>$289</span>
+													<strong>Per Person</strong>
+												</div>
+												<a class="book-now" href="#" title="">SEE DETAILS</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>We Stand By</span>
+										<h4>Reservation Details</h4>
+									</div>
+								</div>
+								<div class="col-md-7 column">
+									<form>
+										<div class="row">
+											<div class="col-md-6">
+												<label>First Name</label>
+												<div class="field">
+													<input type="text" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Last Name</label>
+												<div class="field">
+													<input type="text" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Email</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Phone</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>City</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Address</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label>Requirements</label>
+												<div class="field textarea">
+													<textarea></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<button class="book-now" type="submit">BOOK NOW</button>
+											</div>
+										</div>
+									</form> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- Booking Popup -->
+
+		<div class="popup">
+			<div class="popup-center">
+				<div class="simple-popup-inner">
+					<div class="alert alert-success">
+						<span class="close-btn"><i class="fa fa-times"></i></span>
+						<strong>WellDone!</strong>
+						<p>Your message has been submitted to us successfully, We will get back to you shortly.</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- Popup -->
+	</div>
+
+
+	

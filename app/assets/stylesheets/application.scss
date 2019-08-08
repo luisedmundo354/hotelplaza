@@ -1,0 +1,20 @@
+
+@import "font-awesome.min";
+@import "bootstrap.min";
+@import "style";
+@import "responsive";
+@import "color";
+@import "extralayers";
+@import "settings";
+@import "bootstrap";
+@import "font-awesome";
+
+.weather-wrapper:before{
+	border-top-color:#71a865 ;
+}
+
+.weather-wrapper{
+	background:#71a865 ;
+}
+
+

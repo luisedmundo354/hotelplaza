@@ -4,7 +4,7 @@
  *  Author: Victor C. / Octave & Octave web agency
  *  Licence: MIT
  */
-(function ( $, window, document, undefined ) {
+ (function ( $, window, document, undefined ) {
     var pluginName = 'scrolly',
         defaults = {
             bgParallax: false
@@ -63,3 +63,4 @@
         });
     };
 })(jQuery, window, document);
+

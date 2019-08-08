@@ -1,0 +1,218 @@
+<!-- Gallery code -->
+<br>
+<br>
+<br>
+<div class="pagetop">
+			<div class="container">
+				<h1>Gallery</h1>
+				<<!-- ul>
+					<li><a title="" href="#">Packeges</a></li>
+					<li>Rooms Packeges</li>
+				</ul>	 -->	
+			</div>
+		</div><!-- Page Top -->
+
+<section>
+			<div class="block gray">
+				<div class="container">
+					<div class="row" >
+						<div class="col-md-12 column">
+							<div class="gallery-data">
+								<section id="options">
+									<span>Select Category:</span>
+									<div class="option-isotop">
+										<ul id="filter" class="option-set filters-nav" data-option-key="filter">
+											<li><a href="" class="selected" data-option-value="*">All</a></li>
+											<li><a href="" data-option-value=".adventure">Adventure</a></li>
+											<li><a href="" data-option-value=".horseriding">Horseback Riding</a></li>
+											<li><a href="" data-option-value=".tours">Tours</a></li>
+											<li><a href="" data-option-value=".specials">Specials</a></li>
+										</ul>
+									</div>
+								</section><!-- FILTER BUTTONS -->
+								<div class="row" style="float: right;width: 100%">
+									<div class="gallery gaps masonary lightbox">
+										<% @pictures.each do |gallery|%>
+										<%if gallery.size=="size570x200"%>
+											<div class="col-md-6 adventure">
+												<div class="gallery-img">
+													<%= image_tag gallery.image ,style:"width:570px;height:200px",alt:"" %>
+													<div class="gallery-overlay">
+														<span><%= gallery.happen%></span>
+														<h5><%= gallery.name%></h5>
+														<!-- <a title="" href="http://placehold.it/1000x800"><%= image_tag "plus.png", alt:"" ,title:"#{gallery.name}" %></a> -->
+													</div>
+												</div>
+											</div>
+										<%else%>
+											<div class="col-md-6 adventure">
+												<div class="gallery-img">
+													<%= image_tag gallery.image ,style:"width:570px;height:430px",alt:"" %>
+							
+													<div class="gallery-overlay">
+														<span><%= gallery.happen%></span>
+														<h5><%=gallery.name%></h5>
+													<!-- 	<a title="" href=""><%= image_tag "plus.png", alt:"" ,title:"#{gallery.name}" %></a> -->
+													</div>
+												</div>
+											</div>
+										<%end%>
+									<%end%>	
+										
+								</div>
+							</div><!-- gallery-data -->	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="booking-popup">
+			<div class="popup-container">
+				<div class="popup-inner">
+					<span class="close-btn"><%= image_tag "cross.png" %></span>
+					<div class="popup-title">
+						<span>Any Time Worldwide</span>
+						<h4>Book Your Room</h4>
+						<span>Not valid for bookings less than 3 days </span>
+					</div><!-- Popup Title -->
+					<div class="popup-details">
+						<div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>Any Time</span>
+										<h4>Choose Your Date</h4>
+									</div>
+								</div>
+								<div class="col-md-7 column">
+									<form action="https://sky-sa1.clock-software.com/64789/10598/wbe/products/new?wbe_product[arrival]=arrival&wbe_product[nights]&wbe_product[adult_count]&wbe_product[children_count]" >
+										<div class="row" > 
+											<div class="col-md-6">
+												<label>Check In</label>
+												<div class="field">
+													<input class="popupDatepicker" placeholder="Select Date" name="wbe_product[arrival]"  autocomplete="off" >
+													<%= image_tag "https://hotelplaza.s3.us-east-2.amazonaws.com/calendar.png", class: "field-icon" %>
+												</div>
+											</div>
+											
+											<div class="col-md-4">
+												<label>Nights</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[nights]">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label>Adults</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[adult_count]">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<label>Kids</label>
+												<div class="field">
+													<input class="inc-dec" value="00" type="text" placeholder="" name="wbe_product[children_count]" >
+												</div>
+											</div>
+											
+											<div class="col-md-12">
+												<button class="book-now" type="submit" style="text-decoration: none" >BOOK NOW </button>
+											</div>
+										</div>
+									</form><!-- Tab Form -->
+								</div>
+							</div>
+						</div><!-- up Block -->
+						<!-- <div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>Awesome Rooms</span>
+										<h4>Your Room Summary</h4>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="popup-rooms">
+										<div class="popup-room">
+											<div class="popup-room-img">
+												<img src="images/resource/popup-room.jpg" alt="" />
+											</div>
+											<div class="popup-room-detail">
+												<i>Awesome Features Room</i>
+												<h5>Super Star Luxury Hotle</h5>
+												<div class="room-price-from">
+													<strong>Start From </strong>
+													<span>$289</span>
+													<strong>Per Person</strong>
+												</div>
+												<a class="book-now" href="#" title="">SEE DETAILS</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-block">
+							<div class="row">
+								<div class="col-md-5 column">
+									<div class="popup-block-title">
+										<span>We Stand By</span>
+										<h4>Reservation Details</h4>
+									</div>
+								</div>
+								<div class="col-md-7 column">
+									<form>
+										<div class="row">
+											<div class="col-md-6">
+												<label>First Name</label>
+												<div class="field">
+													<input type="text" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Last Name</label>
+												<div class="field">
+													<input type="text" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Email</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Phone</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>City</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label>Address</label>
+												<div class="field">
+													<input type="email" placeholder="" />
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label>Requirements</label>
+												<div class="field textarea">
+													<textarea></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<button class="book-now" type="submit">BOOK NOW</button>
+											</div>
+										</div>
+									</form> -->
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- Gallery code end -->

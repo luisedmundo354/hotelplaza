@@ -1,4 +1,5 @@
-jQuery(document).ready(function() {
+$(document).on('turbolinks:load' , function() {
+
         "use strict";
 
         /*=================== Simple Weather Plugin ===================*/
@@ -78,7 +79,7 @@ jQuery(document).ready(function() {
         /*=================== Date Picker Initialization ===================*/
         $('.popupDatepicker').datepicker({
             startView: 1,
-            format: "dd/mm/yy",
+            format: "20yy-mm-dd",
             minViewMode: 0,
             todayBtn: "linked",
             clearBtn: true,
