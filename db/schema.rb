@@ -12,16 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2019_08_08_061629) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.bigint "resource_id"
+    t.integer "resource_id"
     t.string "author_type"
-    t.bigint "author_id"
+    t.integer "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -32,8 +29,8 @@ ActiveRecord::Schema.define(version: 2019_08_08_061629) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
-    t.bigint "record_id", null: false
-    t.bigint "blob_id", null: false
+    t.integer "record_id", null: false
+    t.integer "blob_id", null: false
     t.datetime "created_at", null: false
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
@@ -102,6 +99,7 @@ ActiveRecord::Schema.define(version: 2019_08_08_061629) do
 
   create_table "pakages", force: :cascade do |t|
     t.string "image"
+    t.string "type"
     t.string "description"
     t.float "price"
     t.datetime "created_at", null: false
@@ -118,5 +116,4 @@ ActiveRecord::Schema.define(version: 2019_08_08_061629) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end

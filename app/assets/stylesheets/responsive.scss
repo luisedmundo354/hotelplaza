@@ -20,6 +20,22 @@ nav > ul > li > a {padding: 18px 6px;}
     display:none
 }
 
+@media (max-width:2000px){
+    #hotelicon{
+    position:absolute;
+    left: 6%;
+    top: 39%;
+    }
+
+    .find-hotels-form{top: 32%;width: 90%;margin-left: 5%}
+}
+
+@media (max-width:1300px){
+    .find-hotels-form{top: 32%;width: 84%;margin-left: 8%}
+}
+
+
+
 @media (max-width:980px) {
 .column {float: left;width: 100%;margin-bottom: 30px;}
 .column:last-child{margin: 0;}    
@@ -109,7 +125,7 @@ transform:translateY(0px);
 .header-container.stick{position:relative;}
 nav {display: inline-block;width:auto!important;}
 nav ul{display:none!important;}
-.center-logo nav .logo-sec{width:auto;}
+.center-logo nav .logo-sec{position:absolute;width:auto;}
 .logo-sec {display: inline-block;padding: 20px 0;text-align: center;width: 48%;}
 .logo-sec::before, .logo-sec::after {display: none !important;}
 header .container{display:block;}
@@ -146,23 +162,17 @@ nav {margin-bottom: 10px;text-align: center;width: 100% !important;}
     -o-transform:translate(0);
     transform:translate(0);
 }
-.find-hotels-form{
-    top:-2%;
-    display:none
-}
-.grid1{
-    width:50%
-}
-.grid2{
-    width:33%
-}
-.grid3{
-    width:60%;
-    margin-left:20%
-}
+
 #book-now-btn2{
     display:initial
 }
+#hotelicon{
+    position:inherit;
+}
+.find-hotels-form{
+    display:none;
+}
+
 }
 
 @media (max-width:767px) {
@@ -294,20 +304,6 @@ transform:translateY(0px);
 .weather-wrapper:before{border-top-width: 45px;}
 }
 
-@media (max-width:600px){
-.find-hotels-form{
-    top:-20%
-}
-.grid1{
-    width:50%
-}
-.grid2{
-    width:33%
-}
-.grid3{
-    width:60%;
-}
-}
 
 @media (max-width:480px){
 .rooms-list > ul li:first-child:nth-last-child(5), 
@@ -337,20 +333,7 @@ transform:translateY(0px);
 
 }
 
-@media (max-width:430px){
-.block.no-padding{
-    overflow:scroll
-}
-.grid1{
-    width:50%
-}
-.grid2{
-    width:33%
-}
-.grid3{
-    width:60%;
-}
-}
+
 
 
 

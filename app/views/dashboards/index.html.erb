@@ -15,7 +15,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="find-hotels-form">
+							<div class="find-hotels-form" >
 								<div class="container">
 									<!-- <div class="hotels-form-title"><i class="fa fa-building"></i>Find Hotels</div> -->
 									<div class="hotel-form-wrapper">
@@ -29,21 +29,21 @@
 														<%= image_tag "https://hotelplaza.s3.us-east-2.amazonaws.com/calendar.png", class: "field-icon" %>
 													</div>
 												</div>
-												<div class="grid2">
-													<label>Nights</label>
+												<div class="grid3" style="margin-left: 5px">
+													<label >Nights</label>
 													<div class="field"><input class="inc-dec" value="00" type="text" name="wbe_product[nights]" placeholder=""></div>
 												</div>
-												<div class="grid2">
+												<div class="grid3" style="margin-left: 5px">
 													<label>Adults</label>
 													<div class="field"><input class="inc-dec" name="wbe_product[adult_count]" value="00" type="text" placeholder=""></div>
 												</div>
-												<div class="grid2">
+												<div class="grid3" style="margin-left: 5px">
 													<label>Kids</label>
 													<div class="field"><input class="inc-dec" name="wbe_product[children_count]" value="00" type="text" placeholder=""></div>
 												</div>
 												
-												<div class="grid3">
-													<button type="submit" class="book-now">Search Now</button>
+												<div class="grid3" >
+													<button type="submit" class="book-now" style="margin-left: 20px;margin-top: 23px">Search Now</button>
 												</div>
 											</div>
 										</form>
@@ -129,17 +129,17 @@
 												</li>
 												<li>
 													<a title="" href="#deal3" data-toggle="tab">
-																<%= image_tag Bfooter.first.image ,style:"width:100px;height:100px" %>
+														<%= image_tag Bfooter.first.image ,style:"width:100px;height:100px" %>
 													</a>
 												</li>
 											</ul>
 											<div class="tab-content">
-												<div class="tab-pane fade in active" id="deal1">
-													<%= image_tag Footer.first.image  ,style:"width:570px;height:409px" %>
+												<div class="tab-pane fade active show in" id="deal1">
+													<%= image_tag Jumbotron.first.image  ,style:"width:570px;height:409px" %>
 													
 												</div>
 												<div class="tab-pane fade" id="deal2">
-												<%= image_tag Jumbotron.first.image ,style:"width:570px;height:409px" %>
+												<%= image_tag Footer.first.image ,style:"width:570px;height:409px" %>
 												</div>
 												<div class="tab-pane fade" id="deal3">
 														<%= image_tag Bfooter.first.image ,style:"width:570px;height:409px" %>
